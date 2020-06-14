@@ -1,0 +1,24 @@
+server:
+  port: 83
+
+spring:
+  application:
+    name: cloud-payment-consumer-feign
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka71:7001/eureka/,http://eureka72:7002/eureka/
+  instance:
+    instance-id: cloud-payment-consumer-feign
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    com.ylz.service.PaymentService: debug
+feign:
+  hystrix:
+    enabled: true

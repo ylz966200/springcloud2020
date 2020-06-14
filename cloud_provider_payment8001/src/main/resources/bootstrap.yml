@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      label: master
+      name: config
+      profile: test
+      uri: http://localhost:3344 #拼接起来就是http://localhost:3344/master/config
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud_base" />
+        <module name="cloud_consumer_consul_payment" />
+        <module name="cloud_consumer_openFeign_payment" />
+        <module name="cloud_consumer_payment" />
+        <module name="cloud_consumerzk_payment" />
+        <module name="cloud_eureka7001" />
+        <module name="cloud_eureka7002" />
+        <module name="cloud_gateway9527" />
+        <module name="cloud_provider_config3344" />
+        <module name="cloud_provider_payment8001" />
+        <module name="cloud_provider_payment8009_dashboard" />
+        <module name="cloud_provider_zookeeper_payment8003" />
+        <module name="cloud_provied_payment_consul8004" />
+        <module name="cloud_stream_rabbitmq_consumer5002" />
+        <module name="cloud_stream_rabbitmq_provider5001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud_gateway_9527" target="1.8" />
+      <module name="cloud_provider_payment8004" target="1.8" />
+      <module name="cloud_provider_payment9527_gateway" target="1.8" />
+      <module name="cloud_provider_zk_payment8003" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud_eureka7001" options="" />
+      <module name="cloud_provider_payment8004" options="" />
+    </option>
+  </component>
+</project>

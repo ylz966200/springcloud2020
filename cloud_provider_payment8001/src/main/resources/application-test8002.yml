@@ -1,0 +1,23 @@
+server:
+  port: 8002
+
+#spring:
+#  application:
+#    name: cloud-payment-service
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+#    username: root
+#    password: 123456
+#logging:
+#  level:
+#    com:
+#      ylz:
+#        mapper: debug
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: cloud-payment-service8002
+    prefer-ip-address: true
