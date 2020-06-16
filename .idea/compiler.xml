@@ -8,20 +8,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud_base" />
-        <module name="cloud_consumer_consul_payment" />
         <module name="cloud_consumer_openFeign_payment" />
+        <module name="cloud_provider_config" />
         <module name="cloud_consumer_payment" />
-        <module name="cloud_consumerzk_payment" />
         <module name="cloud_eureka7001" />
-        <module name="cloud_eureka7002" />
-        <module name="cloud_gateway9527" />
-        <module name="cloud_provider_config3344" />
-        <module name="cloud_provider_payment8001" />
-        <module name="cloud_provider_payment8009_dashboard" />
+        <module name="cloud_alibaba_nacos_config_3345" />
         <module name="cloud_provider_zookeeper_payment8003" />
-        <module name="cloud_provied_payment_consul8004" />
+        <module name="cloud_alibaba_nacos_9001" />
+        <module name="cloud_eureka7002" />
+        <module name="cloud_provider_payment8001" />
         <module name="cloud_stream_rabbitmq_consumer5002" />
+        <module name="cloud_provied_payment_consul8004" />
+        <module name="cloud_gateway9527" />
         <module name="cloud_stream_rabbitmq_provider5001" />
+        <module name="cloud_consumerzk_payment" />
+        <module name="cloud_consumer_consul_payment" />
+        <module name="cloud_provider_config3344" />
+        <module name="cloud_provider_payment8009_dashboard" />
+        <module name="cloud_alibaba_nacos_comsumer_1001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

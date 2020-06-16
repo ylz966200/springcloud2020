@@ -2,14 +2,12 @@ package com.ylz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
-
-@EnableConfigServer
-//@EnableRabbit
 @SpringBootApplication
-public class ConfigMain {
+public class NacosConfigMain {
+
     public static void main(String[] args) {
-        SpringApplication.run(ConfigMain.class);
+        SpringApplication.run(NacosConfigMain.class);
     }
 }

@@ -54,11 +54,11 @@ public class PaymentController {
         return   this.paymentService.hystrixBreakTest(id);
     }
 
-    @PostMapping("/testRedis")
-    public String testRedis(@RequestBody ReqBean reqBean){
-          this.paymentService.testSetRedis(reqBean.getKey(),reqBean.getValue());
-          return "成功";
-    }
+//    @PostMapping("/testRedis")
+//    public String testRedis(@RequestBody ReqBean reqBean){
+//          this.paymentService.testSetRedis(reqBean.getKey(),reqBean.getValue());
+//          return "成功";
+//    }
 
     @GetMapping("/getToken")
     public String getToken(){

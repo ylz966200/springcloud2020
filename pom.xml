@@ -23,6 +23,9 @@
         <module>cloud_provider_config3344</module>
       <module>cloud_stream_rabbitmq_provider5001</module>
       <module>cloud_stream_rabbitmq_consumer5002</module>
+      <module>cloud_alibaba_nacos_9001</module>
+      <module>cloud_alibaba_nacos_comsumer_1001</module>
+        <module>cloud_alibaba_nacos_config_3345</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -64,6 +67,14 @@
     <type>pom</type>
     <scope>import</scope>
   </dependency>
+    <!--spring boot阿里巴巴-->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+      <version>2.1.0.RELEASE</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
     <!--mybatis-->
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>

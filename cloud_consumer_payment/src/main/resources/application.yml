@@ -13,4 +13,8 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     instance-id: cloud-payment-consumer
-
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 0.5

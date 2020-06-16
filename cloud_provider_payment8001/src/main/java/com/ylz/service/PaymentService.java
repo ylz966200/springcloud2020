@@ -1,16 +1,12 @@
 package com.ylz.service;
 
-import cn.hutool.core.thread.ThreadUtil;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.ylz.base.Payment;
 import com.ylz.mapper.PaymentDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -20,8 +16,8 @@ import java.util.concurrent.TimeUnit;
 public class PaymentService {
     @Autowired
     private PaymentDao paymentDao;
-    @Autowired
-    private RedisTemplate redisTemplate;
+//    @Autowired
+//    private RedisTemplate redisTemplate;
 
     public List<Payment> searchList(){
        return  this.paymentDao.selectList(null);
@@ -54,10 +50,10 @@ public class PaymentService {
         return "成功，调用的id是"+id;
     }
 
-    public void testSetRedis(String key,String value){
-        log.info("向redis发送消息,key:"+key+";value:"+value);
-        this.redisTemplate.convertAndSend(key,value);
-    }
+//    public void testSetRedis(String key,String value){
+//        log.info("向redis发送消息,key:"+key+";value:"+value);
+//        this.redisTemplate.convertAndSend(key,value);
+//    }
 
     public String shibai( Long id){
         return "失败，调用的id是"+id;

@@ -11,15 +11,18 @@ spring:
           search-paths:
             - springcloudconfig
       label: master
-  rabbitmq:
-    host: 192.168.189.133
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: 192.168.189.133
+#    port: 5672
+#    username: guest
+#    password: guest
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka70:7001/eureka
+      defaultZone: http://eureka71:7001/eureka,http://eureka71:7002/eureka
+  instance:
+    instance-id: cloud-payment-config
+    prefer-ip-address: true
 #暴露mq的监控端口
 management:
   endpoints:

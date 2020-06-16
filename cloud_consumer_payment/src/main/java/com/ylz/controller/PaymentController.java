@@ -37,10 +37,10 @@ public class PaymentController {
         return resBody.getBody();
     }
 
-    @RequestMapping("/sendMsg")
-    public void sendMsg(){
-        this.paymentService.sendMsg();
-    }
+//    @RequestMapping("/sendMsg")
+//    public void sendMsg(){
+//        this.paymentService.sendMsg();
+//    }
 
     public String failBack(){
         return "服务方调用超时，请稍后再试";
